@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+*.db
+instance/
+token.pickle
+logs/
+.DS_Store
+
+# Kişisel / ödev dosyaları (repoya gitmesin)
+*.pdf
+*.docx
+templates/

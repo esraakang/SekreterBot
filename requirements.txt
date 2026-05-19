@@ -1,0 +1,16 @@
+Flask
+Flask-SQLAlchemy
+Flask-JWT-Extended
+requests
+PyPDF2
+pdfplumber
+schedule
+openai
+google-api-python-client
+langchain
+langchain-openai
+langchain-google-genai
+google-auth
+google-auth-oauthlib
+python-dotenv
+pytest
