@@ -13,4 +13,4 @@ logs/
 # Kişisel / ödev dosyaları (repoya gitmesin)
 *.pdf
 *.docx
-templates/
+/templates/
