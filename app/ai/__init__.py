@@ -1,4 +1,3 @@
-
 import os
 
 from dotenv import load_dotenv
@@ -15,7 +14,13 @@ if provider == "openai":
         raise RuntimeError(
             "OPENAI_API_KEY bulunamadı. Lütfen .env dosyasına ekleyin veya ortam değişkeni olarak tanımlayın."
         )
-    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7, api_key=_openai_api_key)
+    # Model ismi güncel Groq modeliyle değiştirildi
+    llm = ChatOpenAI(
+        model="llama-3.1-8b-instant", 
+        temperature=0.7, 
+        api_key=_openai_api_key,
+        base_url="https://api.groq.com/openai/v1"
+    )
 elif provider == "gemini":
     _google_api_key = os.getenv("GOOGLE_API_KEY")
     if not _google_api_key:
